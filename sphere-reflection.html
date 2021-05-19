@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFLECTION</title>
+    <style>
+        body{
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #flat{
+            height: 100px;
+            width: 500px;
+            background:linear-gradient(black,#292929,black);
+            box-shadow: 0 0 10px 1px #292929;
+            transform:translate(0px,-25px);
+        }
+        #div{
+            height: 100px;
+            width: 100px;
+            background:teal;
+            box-shadow: 0 30px 100px 0px teal;
+            z-index: 99999;
+            border-radius: 50%;
+            transform:translate(0px,50px);
+        }
+        #div2{
+            height: 25px;
+            width: 100px;
+            opacity: .5;
+            background:linear-gradient(to bottom, teal, transparent);
+            z-index: 99999;
+            border-radius: 50%;
+            transform:translate(0px,50px);
+        }
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <div id="div2"></div>
+    <div id="flat"></div>
+</body>
+</html>
